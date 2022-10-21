@@ -13,12 +13,12 @@ tasks:
         name: smoketest
   -
     name: smoketest
-      language: Bash
-      code: |
-        set -e
-        mkdir tmp
-        cd  tmp
-        mi6-helper new=Foo::Bar provides=Bar-description.txt
-        cat lib/Foo/Bar.rakumod
-      check: |
-        unit class Foo::Bar;
+    language: Bash
+    code: |
+      set -e
+      mkdir tmp
+      cd  tmp
+      mi6-helper new=Foo::Bar provides=Bar-description.txt
+      cat lib/Foo/Bar.rakumod
+    check: |
+      unit class Foo::Bar;
